@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1462538732 source:/home/pi/development/Termin2/thread_cout.cpp
+	<pthread.h>
+	<unistd.h>
+	<iostream>
+	<stdio.h>
+
+1462539659 source:/home/pi/Embedded-Systems/Termin 2/Termin2/thread_cout.cpp
+	<pthread.h>
+	<unistd.h>
+	<iostream>
+	<stdio.h>
+

@@ -1,0 +1,59 @@
+         U abort@@GLIBC_2.4
+         U __aeabi_atexit@@CXXABI_ARM_1.3.3
+         U __aeabi_unwind_cpp_pr1@@GCC_3.5
+00020c8c B _bss_end__
+00020c8c B __bss_end__
+00020bc8 B __bss_start
+00020bc8 B __bss_start__
+000106fc t call_weak_fn
+00020c84 00000001 b completed.9004
+00020bc0 W data_start
+00020bc0 D __data_start
+00010720 t deregister_tm_clones
+00010788 t __do_global_dtors_aux
+00020a7c t __do_global_dtors_aux_fini_array_entry
+00020bc4 D __dso_handle
+00020a84 d _DYNAMIC
+00020bc8 D _edata
+00020c8c B _end
+00020c8c B __end__
+000109ec T _fini
+000107b0 t frame_dummy
+00020a74 t __frame_dummy_init_array_entry
+00010a70 r __FRAME_END__
+00020b84 d _GLOBAL_OFFSET_TABLE_
+00010910 0000001c t _GLOBAL__sub_I_main
+         w __gmon_start__
+0001061c T _init
+00020a7c t __init_array_end
+00020a74 t __init_array_start
+000109f8 00000004 R _IO_stdin_used
+         w _ITM_deregisterTMCloneTable
+         w _ITM_registerTMCloneTable
+00020a80 d __JCR_END__
+00020a80 d __JCR_LIST__
+         w _Jv_RegisterClasses
+000109e8 00000004 T __libc_csu_fini
+00010984 00000064 T __libc_csu_init
+         U __libc_start_main@@GLIBC_2.4
+000107e8 000000c8 T main
+00010750 t register_tm_clones
+000106c0 T _start
+00020bc8 D __TMC_END__
+000108b0 00000060 t __static_initialization_and_destruction_0(int, int)
+0001092c 00000024 W CBeispiel::funktion()
+00010950 00000034 W CBeispiel::CBeispiel()
+00010950 00000034 W CBeispiel::CBeispiel()
+         U std::ostream::operator<<(unsigned int)@@GLIBCXX_3.4
+         U std::ostream::operator<<(std::ostream& (*)(std::ostream&))@@GLIBCXX_3.4
+         U std::ios_base::Init::Init()@@GLIBCXX_3.4
+         U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+         U operator new(unsigned int)@@GLIBCXX_3.4
+00020bf8 0000008c B std::cout@@GLIBCXX_3.4
+         U std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)@@GLIBCXX_3.4
+00020c88 00000001 b std::__ioinit
+         U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@@GLIBCXX_3.4
+00010a44 00000008 V typeinfo for CBeispiel
+00010a38 0000000b V typeinfo name for CBeispiel
+00010a28 0000000c V vtable for CBeispiel
+00020bc8 0000002c B vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3

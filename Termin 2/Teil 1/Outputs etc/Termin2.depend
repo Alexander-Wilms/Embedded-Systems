@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1462457328 source:/home/pi/Documents/Codeblocks Projects/Termin2/thread_cout.cpp
+	<pthread.h>
+	<unistd.h>
+	<iostream>
+	<stdio.h>
+

@@ -1,0 +1,223 @@
+execve("./Termin2", ["./Termin2"], [/* 26 vars */]) = 0
+brk(0)                                  = 0x528000
+uname({sys="Linux", node="raspberrypi", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fdd000
+access("/etc/ld.so.preload", R_OK)      = 0
+open("/etc/ld.so.preload", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=42, ...}) = 0
+mmap2(NULL, 42, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x76fdc000
+close(3)                                = 0
+open("/usr/lib/arm-linux-gnueabihf/libarmmem.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0h\5\0\0004\0\0\0"..., 512) = 512
+lseek(3, 17960, SEEK_SET)               = 17960
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+lseek(3, 17696, SEEK_SET)               = 17696
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\3\f\1\22\4\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=18920, ...}) = 0
+mmap2(NULL, 83236, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76f9b000
+mprotect(0x76fa0000, 61440, PROT_NONE)  = 0
+mmap2(0x76faf000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x76faf000
+mprotect(0x7ebcf000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+close(3)                                = 0
+munmap(0x76fdc000, 42)                  = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=83685, ...}) = 0
+mmap2(NULL, 83685, PROT_READ, MAP_PRIVATE, 3, 0) = 0x76f86000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0lY\0\0004\0\0\0"..., 512) = 512
+lseek(3, 120788, SEEK_SET)              = 120788
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1520) = 1520
+lseek(3, 86420, SEEK_SET)               = 86420
+read(3, "A0\0\0\0aeabi\0\1&\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 49) = 49
+fstat64(3, {st_mode=S_IFREG|0755, st_size=122308, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fdc000
+mmap2(NULL, 160316, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76f5e000
+mprotect(0x76f72000, 65536, PROT_NONE)  = 0
+mmap2(0x76f82000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x76f82000
+mmap2(0x76f84000, 4668, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76f84000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabihf/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0xk\4\0004\0\0\0"..., 512) = 512
+lseek(3, 808332, SEEK_SET)              = 808332
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1280) = 1280
+lseek(3, 807760, SEEK_SET)              = 807760
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=809612, ...}) = 0
+mmap2(NULL, 900808, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76e82000
+mprotect(0x76f43000, 61440, PROT_NONE)  = 0
+mmap2(0x76f52000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc0000) = 0x76f52000
+mmap2(0x76f58000, 24264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76f58000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0p<\0\0004\0\0\0"..., 512) = 512
+lseek(3, 434644, SEEK_SET)              = 434644
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1160) = 1160
+lseek(3, 434312, SEEK_SET)              = 434312
+read(3, "A0\0\0\0aeabi\0\1&\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 49) = 49
+fstat64(3, {st_mode=S_IFREG|0644, st_size=435804, ...}) = 0
+mmap2(NULL, 499856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76e07000
+mprotect(0x76e70000, 65536, PROT_NONE)  = 0
+mmap2(0x76e80000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x69000) = 0x76e80000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0`\321\0\0004\0\0\0"..., 512) = 512
+lseek(3, 116400, SEEK_SET)              = 116400
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 116072, SEEK_SET)              = 116072
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=117520, ...}) = 0
+mmap2(NULL, 181664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76dda000
+mprotect(0x76df7000, 61440, PROT_NONE)  = 0
+mmap2(0x76e06000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x76e06000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0L\204\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1239936, SEEK_SET)             = 1239936
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2840) = 2840
+lseek(3, 1236500, SEEK_SET)             = 1236500
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1242776, ...}) = 0
+mmap2(NULL, 1312152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76c99000
+mprotect(0x76dc4000, 65536, PROT_NONE)  = 0
+mmap2(0x76dd4000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12b000) = 0x76dd4000
+mmap2(0x76dd7000, 9624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76dd7000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fdb000
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fda000
+set_tls(0x76fda4c0, 0x76fdabb8, 0x76fe0050, 0x76fda4c0, 0x76fe0050) = 0
+mprotect(0x76dd4000, 8192, PROT_READ)   = 0
+mprotect(0x76e80000, 4096, PROT_READ)   = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fd9000
+mprotect(0x76f52000, 16384, PROT_READ)  = 0
+mprotect(0x76f82000, 4096, PROT_READ)   = 0
+mprotect(0x76f9b000, 20480, PROT_READ|PROT_WRITE) = 0
+mprotect(0x76f9b000, 20480, PROT_READ|PROT_EXEC) = 0
+cacheflush(0x76f9b000, 0x76fa0000, 0, 0x15, 0x7ebcf180) = 0
+mprotect(0x76fdf000, 4096, PROT_READ)   = 0
+munmap(0x76f86000, 83685)               = 0
+set_tid_address(0x76fda068)             = 9046
+set_robust_list(0x76fda070, 12)         = 0
+rt_sigaction(SIGRTMIN, {0x76f63434, [], SA_RESTORER|SA_SIGINFO, 0x76cc81a0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x76f632d8, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x76cc81a0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+futex(0x76f5cce8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x76f5ccdc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+fstat64(1, {st_mode=S_IFREG|0644, st_size=7678, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76fd8000
+mmap2(NULL, 8388608, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x76499000
+brk(0)                                  = 0x528000
+brk(0x549000)                           = 0x549000
+mprotect(0x76499000, 4096, PROT_NONE)   = 0
+clone(Process 9047 attached
+child_stack=0x76c97f88, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x76c984b8, tls=0x76c98910, child_tidptr=0x76c984b8) = 9047
+[pid  9047] set_robust_list(0x76c984c0, 12) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9046] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9046] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] <... futex resumed> )       = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9046] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] <... futex resumed> )       = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9046] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid  9046] futex(0x76c984b8, FUTEX_WAIT, 9047, NULL <unfinished ...>
+[pid  9047] futex(0x76dd76e0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid  9047] madvise(0x76499000, 8364032, MADV_DONTNEED) = 0
+[pid  9047] exit(0)                     = ?
+[pid  9046] <... futex resumed> )       = 0
+[pid  9047] +++ exited with 0 +++
+write(1, "start count x=0, y=0\nAABAAAAAAAA"..., 2107start count x=0, y=0
+AABAAAAAAAAAAAAAAABBBBBBBBBBABAAAAAAAAAAAABAAABBBBBBBBBBBBBBBABAAAAAAAAAAAAAAABAAAAAAAAAABBBBBBBBBBBBBBBBABAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBABAAAAAAAABBBBBBBBBBABAAAAAAAAAAAABBBBBBBBBBABAAAAAAABAAAAAAAAAAAAAAAAABBBBBBBBABAAAAAAAAAAABBBBBBBBBABAAAAAAAAABBBBBBBBBBBABBBBBBBBBBBBABAAAAAAAAAAAAABAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+reached end of incrementing y
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+reached end of incrementing x
+
+end count x=1000, y=1000
+) = 2107
+exit_group(0)                           = ?
++++ exited with 0 +++

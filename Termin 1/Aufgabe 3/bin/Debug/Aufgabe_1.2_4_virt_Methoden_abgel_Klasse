@@ -1,0 +1,80 @@
+         U abort@@GLIBC_2.4
+         U __aeabi_atexit@@CXXABI_ARM_1.3.3
+         U __aeabi_unwind_cpp_pr0@@GCC_3.5
+         U __aeabi_unwind_cpp_pr1@@GCC_3.5
+0002124c B _bss_end__
+0002124c B __bss_end__
+00021154 B __bss_start
+00021154 B __bss_start__
+0001076c t call_weak_fn
+00021244 00000001 b completed.9004
+0002114c W data_start
+0002114c D __data_start
+00010790 t deregister_tm_clones
+000107f8 t __do_global_dtors_aux
+00021008 t __do_global_dtors_aux_fini_array_entry
+00021150 D __dso_handle
+00021010 d _DYNAMIC
+00021154 D _edata
+0002124c B _end
+0002124c B __end__
+00010ca8 T _fini
+00010820 t frame_dummy
+00021000 t __frame_dummy_init_array_entry
+00010df8 r __FRAME_END__
+00021110 d _GLOBAL_OFFSET_TABLE_
+00010a30 0000001c t _GLOBAL__sub_I_main
+         w __gmon_start__
+0001068c T _init
+00021008 t __init_array_end
+00021000 t __init_array_start
+00010cb0 00000004 R _IO_stdin_used
+         w _ITM_deregisterTMCloneTable
+         w _ITM_registerTMCloneTable
+0002100c d __JCR_END__
+0002100c d __JCR_LIST__
+         w _Jv_RegisterClasses
+00010ca4 00000004 T __libc_csu_fini
+00010c40 00000064 T __libc_csu_init
+         U __libc_start_main@@GLIBC_2.4
+00010858 00000178 T main
+000107c0 t register_tm_clones
+00010730 T _start
+00021154 D __TMC_END__
+000109d0 00000060 t __static_initialization_and_destruction_0(int, int)
+00010a94 00000024 W CBeispiel2::funktion3()
+00010ab8 00000024 W CBeispiel2::funktion4()
+00010bb0 00000034 W CBeispiel2::CBeispiel2()
+00010bb0 00000034 W CBeispiel2::CBeispiel2()
+00010adc 00000024 W CAbgeleitet::funktion()
+00010b00 00000024 W CAbgeleitet::funktion2()
+00010b24 00000024 W CAbgeleitet::funktion3()
+00010b50 00000024 W CAbgeleitet::funktion4()
+00010be4 0000005c W CAbgeleitet::CAbgeleitet()
+00010be4 0000005c W CAbgeleitet::CAbgeleitet()
+00010a4c 00000024 W CBeispiel::funktion()
+00010a70 00000024 W CBeispiel::funktion2()
+00010b7c 00000034 W CBeispiel::CBeispiel()
+00010b7c 00000034 W CBeispiel::CBeispiel()
+         U std::ostream::operator<<(unsigned int)@@GLIBCXX_3.4
+         U std::ostream::operator<<(std::ostream& (*)(std::ostream&))@@GLIBCXX_3.4
+         U std::ios_base::Init::Init()@@GLIBCXX_3.4
+         U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+         U operator new(unsigned int)@@GLIBCXX_3.4
+00021188 0000008c B std::cout@@GLIBCXX_3.4
+         U std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)@@GLIBCXX_3.4
+00021248 00000001 b std::__ioinit
+         U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@@GLIBCXX_3.4
+00010b48 00000008 W non-virtual thunk to CAbgeleitet::funktion3()
+00010b74 00000008 W non-virtual thunk to CAbgeleitet::funktion4()
+00010d98 00000008 V typeinfo for CBeispiel2
+00010d68 00000020 V typeinfo for CAbgeleitet
+00010dac 00000008 V typeinfo for CBeispiel
+00010d88 0000000d V typeinfo name for CBeispiel2
+00010d58 0000000e V typeinfo name for CAbgeleitet
+00010da0 0000000b V typeinfo name for CBeispiel
+00010d38 00000010 V vtable for CBeispiel2
+00010d10 00000028 V vtable for CAbgeleitet
+00010d48 00000010 V vtable for CBeispiel
+00021158 0000002c B vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+00021218 0000002c B vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

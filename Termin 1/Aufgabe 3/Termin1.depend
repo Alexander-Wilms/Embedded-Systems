@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1465009172 source:/home/pi/Embedded-Systems/Termin 1/main.cpp
+	<iostream>
+
+1465011415 source:/home/pi/Embedded-Systems/Termin 1/Aufgabe 3/main.cpp
+	"header.h"
+	<iostream>
+
+1465011445 /home/pi/Embedded-Systems/Termin 1/Aufgabe 3/header.h
+	<iostream>
+

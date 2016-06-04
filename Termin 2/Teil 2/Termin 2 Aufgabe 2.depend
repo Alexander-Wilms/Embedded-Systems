@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1462547563 source:/home/pi/Termin 2 Aufgabe 2/thread_cout.cpp
+	<pthread.h>
+	<unistd.h>
+	<iostream>
+	<time.h>
+

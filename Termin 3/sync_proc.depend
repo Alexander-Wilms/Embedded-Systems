@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1464964124 source:/home/pi/Embedded-Systems/Termin 3/CNamedSemaphore.cpp
+	<iostream>
+	<errno.h>
+	<fcntl.h>
+	<stdlib.h>
+	<unistd.h>
+	"CNamedSemaphore.h"
+
+1464960270 /home/pi/Embedded-Systems/Termin 3/CNamedSemaphore.h
+	<semaphore.h>
+
+1462462611 source:/home/pi/Embedded-Systems/Termin 3/sync_proc.cpp
+	<iostream>
+	"CNamedSemaphore.h"
+	<stdlib.h>
+	<unistd.h>
+	<stdio.h>
+

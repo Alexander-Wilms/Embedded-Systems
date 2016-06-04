@@ -1,0 +1,49 @@
+1.1
+
+000107e8 000000c8 T main
+
+0001092c 00000024 W     CBeispiel::funktion()
+   /\       /\    /\        /\
+Symbol     Size  Weak    Symbol name
+Value            Symbol
+                 ( werden spät d.h. zum Programmstart gelinkt)
+00010950 00000034 W CBeispiel::CBeispiel()
+00010950 00000034 W CBeispiel::CBeispiel()
+         U std::ostream::operator<<(unsigned int)@@GLIBCXX_3.4
+         U std::ostream::operator<<(std::ostream& (*)(std::ostream&))@@GLIBCXX_3.4
+
+00010a44 00000008 V typeinfo for CBeispiel
+00010a38 0000000b V typeinfo name for CBeispiel
+00010a28 0000000c V vtable for CBeispiel
+00020bc8 0000002c B vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+
+Ausgabe 1 Objekt ohne virtuellen Methoden:
+Architecture = 32 Bit
+Size = 4 Byte
+keine VTable (nm)
+
+Ausgabe 1 Objekt mit 1 virtuellen Methode:
+Architecture = 32 Bit
+Size = 4 Byte
+
+Ausgabe 1 Objekt mit 2 virtuellen Methoden:
+Architecture = 32 Bit
+Size = 4 byte
+
+1.2
+
+00010a94 00000024 W CBeispiel2::funktion3()
+00010ab8 00000024 W CBeispiel2::funktion4()
+00010bb0 00000034 W CBeispiel2::CBeispiel2()
+00010bb0 00000034 W CBeispiel2::CBeispiel2()
+00010adc 00000024 W CAbgeleitet::funktion()
+00010b00 00000024 W CAbgeleitet::funktion2()
+00010b24 00000024 W CAbgeleitet::funktion3()
+00010b50 00000024 W CAbgeleitet::funktion4()
+00010be4 0000005c W CAbgeleitet::CAbgeleitet()
+00010be4 0000005c W CAbgeleitet::CAbgeleitet()
+00010a4c 00000024 W CBeispiel::funktion()
+00010a70 00000024 W CBeispiel::funktion2()
+00010b7c 00000034 W CBeispiel::CBeispiel()
+00010b7c 00000034 W CBeispiel::CBeispiel()
+
