@@ -32,7 +32,7 @@ void* main_thread(void* parameterPtr) {
 // main runs thread 1 writing y
 // and creates 2nd thread to write x in parallel
 int main() {
-    sched_setaffinity(getpid(), (size_t) cpusetsize, (cpu_set_t *) mask);
+    //sched_setaffinity(getpid(), (size_t) cpusetsize, (cpu_set_t *) mask);
 
     // variables we modify in two threads
     char x = 'A', y = 'B';
