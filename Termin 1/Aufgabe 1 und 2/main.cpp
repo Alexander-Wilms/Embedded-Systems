@@ -85,7 +85,7 @@ union UData2 {
 
 int main()
 {
-    int no_use;
+    long no_use;
     cout << "Architecture = " << sizeof(no_use)*8 << " Bit" << endl;
 
     CBeispiel *beispiel = new CBeispiel;
