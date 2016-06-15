@@ -1,5 +1,5 @@
 all:
-	g++ main.cpp\
+	g++ -lpthread main.cpp\
 		socket/CSockConnector.h\
 		socket/CSockConnector.cpp\
 		socket/CSockAcceptor.h\
@@ -10,6 +10,8 @@ all:
 		socket/IIOStream.cpp\
 		socket/CInetAddr.h\
 		socket/CInetAddr.cpp\
-		-lpthread
+		CNamedSemaphore.h\
+		CNamedSemaphore.cpp
+		
 
 
