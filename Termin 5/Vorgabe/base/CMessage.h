@@ -187,7 +187,6 @@ inline void CMessage::setSenderID(Int32 senderID)
    theMessage.appMsg.senderID = senderID;
 }
 
-
 inline void CMessage::setReceiverID(Int32 receiverID)
 {
    theMessage.appMsg.receiverID = receiverID;

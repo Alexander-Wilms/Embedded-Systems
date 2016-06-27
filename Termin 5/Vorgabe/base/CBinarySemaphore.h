@@ -95,13 +95,14 @@ public:
 
 private:
 	// to avoid misuse
-	CBinarySemaphore(const CBinarySemaphore& rhs);
+	// CBinarySemaphore(const CBinarySemaphore& rhs);
 	CBinarySemaphore& operator=(const CBinarySemaphore& rhs);
 
 	/**
 	 * NOTE that POSIX-sem_t does not support the possibility  of timeout. Therefore we must use the mechanism of
 	 * condition variable to implement a binary semaphore with the well known semantic mutex for loking
 	 */
+
 	pthread_mutex_t mMutex;
 	// condition variable used to implement take with timeout
 	pthread_cond_t mCondition;

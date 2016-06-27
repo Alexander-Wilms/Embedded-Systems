@@ -32,8 +32,8 @@ int main()
 	// Adresse des Servers
 	CInetAddr server_addr;
 	// lokal
-	 server_addr.set(9000, "127.0.0.1");
-	// server_addr.set(9000, "172.17.15.191");
+	 //server_addr.set(9000, "127.0.0.1");
+	server_addr.set(9000, "172.17.15.191");
 
 	// Klasse zum Verbinden von Client und Server
 	CSockConnector client;
@@ -44,12 +44,12 @@ int main()
 	// Verbinde Client mit Server
 	if (client.connect(client_stream, server_addr, true))
 	{
-	printf("client successfully connected to server\n");
+		printf("client successfully connected to server\n");
 	} else
 	{
-	printf("client not successfully connected to server\n");
-	// exit
-	return 0;
+		printf("client not successfully connected to server\n");
+		// exit
+		return 0;
 	}
 	
 	sleep(10);

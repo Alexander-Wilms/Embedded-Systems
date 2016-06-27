@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1441378382 source:/home/pi/Embedded-Systems/Termin 5/Vorgabe/base/CBinarySemaphore.cpp
+	"CBinarySemaphore.h"
+
+1467060231 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/CBinarySemaphore.h
+	"Global.h"
+	"FWAssertion.h"
+	<sys/time.h>
+	<errno.h>
+	<pthread.h>
+
+1441378382 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/Global.h
+	<stdio.h>
+	<stdio.h>
+
+1441378382 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/FWAssertion.h
+	<assert.h>
+
+1441378382 source:/home/pi/Embedded-Systems/Termin 5/Vorgabe/base/CCommQueue.cpp
+	"CCommQueue.h"
+	"FWAssertion.h"
+	<new>
+
+1467061480 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/CCommQueue.h
+	"Global.h"
+	"CBinarySemaphore.h"
+	"CMessage.h"
+
+1467060817 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/CMessage.h
+	"Global.h"
+	"IMessageHandler.h"
+	<string.h>
+
+1441378382 /home/pi/Embedded-Systems/Termin 5/Vorgabe/base/IMessageHandler.h
+
+1467062677 source:/home/pi/Embedded-Systems/Termin 5/Vorgabe/main.cpp
+	<iostream>
+	<stdlib.h>
+	<unistd.h>
+	<sys/mman.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/time.h>
+	<CCommQueue.h>
+	"base/CMessage.h"
+

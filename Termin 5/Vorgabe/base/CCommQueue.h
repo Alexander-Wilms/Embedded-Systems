@@ -133,7 +133,7 @@ private:
 
 
    // to avoid wrong usage
-   CCommQueue           (const CCommQueue& rhs);
+   // CCommQueue           (const CCommQueue& rhs);
    const CCommQueue& operator=(const CCommQueue& rhs);
 
 

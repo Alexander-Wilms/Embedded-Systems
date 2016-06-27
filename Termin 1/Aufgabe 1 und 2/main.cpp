@@ -94,7 +94,7 @@ int main()
     CBeispiel2 *beispiel2 = new CBeispiel2;
     cout << "Size CBeispiel2 = " << sizeof(beispiel2) << " byte" << endl;
 
-    CAbgeleitet *beispiel3= new CAbgeleitet;
+    CAbgeleitet *beispiel3 = new CAbgeleitet;
     cout << "Size CAbgeleitet = " << sizeof(beispiel3) << " byte" << endl;
 
     cout << "Size SData = " << sizeof(SData) << " byte" << endl; // Sollte 16 Byte groß sein
