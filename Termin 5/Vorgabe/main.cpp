@@ -50,6 +50,7 @@ int main()
         CBinarySemaphore * myCBinarySemaphorePtr = new (myCBinarySemaphoreMemPtr) CBinarySemaphore();
 
         // create queue in the shared memory
+        cout << "C: create queue" << endl;
         CCommQueue * myCCommQueueMemPtr = (CCommQueue *) myCBinarySemaphorePtr + len_sem;
         CCommQueue * myCCommQueuePtr = new (myCCommQueueMemPtr) CCommQueue((Int32)QUEUE_SIZE, *myCBinarySemaphorePtr);
 
@@ -59,7 +60,9 @@ int main()
         cout << "C: create CMessage object" << endl;
         CMessage myCMessage;
 
-        while(1)
+        int j = 0;
+
+        while(j < NUM_MESSAGES)
         {
             // block child proces while there's no CMessage to be read
             cout << "C: try to take semaphore" << endl;
@@ -68,12 +71,16 @@ int main()
             // pop CMessage from queue
             cout << "C: pop CMessage from queue" << endl;
             if(myCCommQueuePtr->getMessage(myCMessage))
+            {
                 cout << "C: Message successfully popped from queue" << endl;
-            cout << "C: message type: " << myCMessage.getParam1() << endl;
-
+                cout << "C: message type: " << myCMessage.getParam1() << endl;
+                j++;
+            }
         }
 
-        //shm_unlink(SHM_NAME);
+        shm_unlink(SHM_NAME);
+
+        cout << "child pid: " << getpid() << endl;
 
     }
     else if (pid > 0)
@@ -108,17 +115,22 @@ int main()
         CBinarySemaphore * myCBinarySemaphorePtr = new (myCBinarySemaphoreMemPtr) CBinarySemaphore();
 
         // create queue in the shared memory
+        cout << "P: create queue" << endl;
         CCommQueue * myCCommQueueMemPtr = (CCommQueue *) myCBinarySemaphorePtr + len_sem;
         CCommQueue * myCCommQueuePtr = new (myCCommQueueMemPtr) CCommQueue((Int32)QUEUE_SIZE, *myCBinarySemaphorePtr);
+
+        sleep(1);
 
         // create CMessage object
         cout << "P: create CMessage object" << endl;
         CMessage myCMessage;
 
+        int i = 0;
+        int j = 0;
+
         //myCBinarySemaphorePtr->take();
 
-        int i = 0;
-        while(1)
+        while(j < NUM_MESSAGES)
         {
             // fill CMessage object with data
             cout << "P: fill CMessage object with data" << endl;
@@ -135,13 +147,22 @@ int main()
             myCBinarySemaphorePtr->give();
 
             i++;
+            j++;
 
-            getchar();
+            //cout << "P: waiting for input" << endl;
+                //getchar();
+                cout << endl;
         }
 
+        while(myCCommQueuePtr->getNumOfMessages()) { myCBinarySemaphorePtr->give(); }
+
+        sleep(1);
 
         // delete shared memory
-        //shm_unlink(SHM_NAME);
+        shm_unlink(SHM_NAME);
+
+        cout << "parent pid: " << getpid() << endl;
+        exit(7);
     }
     else
     {
