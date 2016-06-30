@@ -8,7 +8,7 @@ extern int myGlobal3;
 class Class1
 {
 public:
-    Class1(char * param)
+    Class1(char * param = "Class1")
     {
         cout << "Class1 " << param << endl;
     }
@@ -17,12 +17,13 @@ public:
 class Class2
 {
 public:
-    Class2(char * param)
+    Class2(char * param = "Class2" )
     {
         cout << "Class2 " << param << endl;
     }
 };
 
+// 2 global class objects
 Class1 *Object1 = new Class1("global header.h");
 Class2 *Object2 = new Class2("global header.h");
 

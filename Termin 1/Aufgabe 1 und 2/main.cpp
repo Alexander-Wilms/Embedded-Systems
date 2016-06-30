@@ -1,4 +1,5 @@
 #include <iostream>
+#include <inttypes.h>
 
 using namespace std;
 
@@ -26,9 +27,14 @@ class CBeispiel2
     {
         return 0;
     }
+
+    virtual int funktion5(void)
+    {
+        return 0;
+    }
 };
 
-class CAbgeleitet : CBeispiel, CBeispiel2
+class CAbgeleitet: CBeispiel2, CBeispiel2
 {
     int funktion(void)
     {
@@ -46,6 +52,11 @@ class CAbgeleitet : CBeispiel, CBeispiel2
     }
 
     int funktion4(void)
+    {
+        return 1;
+    }
+
+    int funktion5(void)
     {
         return 1;
     }
@@ -69,18 +80,28 @@ struct SData2 {
 
 union UData {
     char    a; // Offset 0x0
-    int     b; // Offset 0x4 Alignment auf 32 Bit-Grenze
-    char    c; // Offset 0x8
-    short   d; // Offset 0xA Alignment auf 16 Bit-Grenze
-    int     e; // Offset 0xC
+    int     b; // Offset 0x0
+    char    c; // Offset 0x0
+    short   d; // Offset 0x0
+    int     e; // Offset 0x0
 };
 
 union UData2 {
     char    a; // Offset 0x0
-    char    c; // Offset 0x1
-    short   d; // Offset 0x2
-    int     b; // Offset 0x4
-    int     e; // Offset 0x8
+    char    c; // Offset 0x0
+    short   d; // Offset 0x0
+    int     b; // Offset 0x0
+    int     e; // Offset 0x0
+
+};
+
+union UData3 {
+    char        a; // Offset 0x0
+    char        c; // Offset 0x0
+    short       d; // Offset 0x0
+    int         b; // Offset 0x0
+    uint64_t    e; // Offset 0x0
+
 };
 
 int main()
@@ -89,21 +110,25 @@ int main()
     cout << "Architecture = " << sizeof(no_use)*8 << " Bit" << endl;
 
     CBeispiel *beispiel = new CBeispiel;
-    cout << "Size CBeispiel = " << sizeof(beispiel) << " byte" << endl;
+    cout << "Size CBeispiel = " << sizeof(*beispiel) << " byte" << endl;
 
     CBeispiel2 *beispiel2 = new CBeispiel2;
-    cout << "Size CBeispiel2 = " << sizeof(beispiel2) << " byte" << endl;
+    cout << "Size CBeispiel2 = " << sizeof(*beispiel2) << " byte" << endl;
 
     CAbgeleitet *beispiel3 = new CAbgeleitet;
-    cout << "Size CAbgeleitet = " << sizeof(beispiel3) << " byte" << endl;
+    cout << "Size CAbgeleitet = " << sizeof(*beispiel3) << " byte" << endl;
 
     cout << "Size SData = " << sizeof(SData) << " byte" << endl; // Sollte 16 Byte groß sein
 
     cout << "Size SData2 = " << sizeof(SData2) << " byte" << endl; // Sollte 12 Byte groß sein
 
-    cout << "Size SData = " << sizeof(UData) << " byte" << endl; // Unions sollten gleich groß sein
+    cout << "Unions sind immer so groß wie das größte Element (Int mit 4" << endl;
 
-    cout << "Size SData2 = " << sizeof(UData2) << " byte" << endl;
+    cout << "Size UData = " << sizeof(UData) << " byte" << endl; // Unions sollten gleich groß sein
+
+    cout << "Size UData2 = " << sizeof(UData2) << " byte" << endl;
+
+    cout << "Size UData3 = " << sizeof(UData3) << " byte" << endl;
 
     return 0;
 }

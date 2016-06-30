@@ -6,26 +6,32 @@
 #include <fcntl.h>      // For O_ constants
 #include <sys/time.h>
 #include <CCommQueue.h>
-
+#include <sys/time.h>
+#include <sched.h>
 #include "base/CMessage.h"
 
 using namespace std;
 
 #define SHM_NAME        "/estSHM"
-#define QUEUE_SIZE      100
+#define QUEUE_SIZE      64
 #define NUM_MESSAGES    10000
 
 CBinarySemaphore myCBinarySemaphorePtr;
 int len_sem = sizeof(CBinarySemaphore);
 int len_queue = NUM_MESSAGES*sizeof(CMessage);
 
-int main()
+int main(void)
 {
     int file_descriptor;
 
     // create child process via fork()
     cout << "Creating a child process ..." << endl;
     pid_t pid = fork();
+
+
+    const sched_param myparam = {sched_get_priority_max(SCHED_FIFO)};
+
+    sched_setscheduler(pid, SCHED_FIFO, &myparam);
 
     if (0 == pid)
     {
@@ -61,7 +67,8 @@ int main()
         CMessage myCMessage;
 
         int j = 0;
-
+        timeval tv;
+        int32_t sum;
         while(j < NUM_MESSAGES)
         {
             // block child proces while there's no CMessage to be read
@@ -72,10 +79,17 @@ int main()
             cout << "C: pop CMessage from queue" << endl;
             if(myCCommQueuePtr->getMessage(myCMessage))
             {
+                gettimeofday(&tv,0);
+                int32_t time = (int) tv.tv_usec;
                 cout << "C: Message successfully popped from queue" << endl;
-                cout << "C: message type: " << myCMessage.getParam1() << endl;
+                // Performance: Berechnung 1 mal & speichern & lesen oder 2 mal berechnen
+                int32_t delta = tv.tv_sec * 1000000L + tv.tv_usec - myCMessage.getParam1();
+                cout << "C: current time:"<< time << ", delta: " << delta << endl;
+                sum += delta;
                 j++;
+                cout << "average time to transmit: " << sum/(j+1) << endl;
             }
+
         }
 
         shm_unlink(SHM_NAME);
@@ -128,13 +142,14 @@ int main()
         int i = 0;
         int j = 0;
 
-        //myCBinarySemaphorePtr->take();
+        timeval tv;
 
         while(j < NUM_MESSAGES)
         {
             // fill CMessage object with data
             cout << "P: fill CMessage object with data" << endl;
-            myCMessage.setParam1(i);
+            gettimeofday(&tv,0);
+            myCMessage.setParam1((Int32) tv.tv_sec * 1000000 + tv.tv_usec);
             cout << "P: message type: " << myCMessage.getParam1() << endl;
 
             // push CMessage into queue
